@@ -1,0 +1,26 @@
+/* spacificity of this is 1 */
+h1{
+    color: magenta;
+}
+/* spacificity of this is 10 + 1 = 11 */
+h1.yellow{
+    color: yellow;
+}
+/* spacificity of this is 10000 because of importent tag  */
+.purpule{
+    color: purple !important;
+    ;
+}
+/* spacificity of this is 10 */
+.red{
+    color: red;
+    
+}
+/* spacificity of this is 10 but this is the last thats why if 3 class in same spacificity but element is choose only last one  */
+.blue{
+    color: blue;
+}
+/* spacificity of this is 10 because this is clss attribute  */
+[data-x=a]{
+    background-color: yellow;
+}

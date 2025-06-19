@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ANIMATION</title>
+    <style>
+.container{
+    width: 50vw;
+    height: 40vh;
+    background-color: darkolivegreen;
+    border: 3px solid black;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.box{
+    width: 5vw;
+    height: 4vh;
+    background-color: rgb(221, 225, 189);
+    
+    /* animation-name: animation;
+    animation-duration: 2s;
+    animation-iteration-count:1 ;
+    animation-timing-function: cubic-bezier(0, 0, 0, 1);
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-play-state:running;
+    animation-fill-mode: forwards; */
+
+    animation: animation 2s cubic-bezier(0, 0, 0, 1) 2s infinite alternate forwards,
+    animation2 2s ease-in-out 3s infinite;
+    
+
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+
+}
+
+@keyframes animation{
+from{
+background-color: rgb(221, 225, 189);
+
+
+}
+
+to{
+transform: translateX(40vw) scale(2);
+background-color: rgb(255, 64, 64);
+
+
+}
+
+}
+
+@keyframes animation2{
+    0%{
+        transform: rotate();
+    }
+    25%{
+transform: rotate(100deg);
+    }
+    50%{
+transform: rotate(200deg);
+    }
+    75%{
+transform: rotate(300deg);
+    }
+    100%{
+transform: rotate(500deg);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+    
+</body>
+</html>

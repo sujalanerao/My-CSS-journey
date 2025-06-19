@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-fit and Object-cover</title>
+    <style>
+.container{
+width: 600px;
+height: 400px;
+background-color: beige;
+border: 3px solid rgb(0, 0, 0);
+/* border-radius: 15px; */
+}
+img{
+    width: 600px;
+height: 400px;
+object-fit: cover;
+object-position: right;
+/* object-fit: fill; */
+/* object-fit: contain; */
+/* border-radius: 12px; */
+}
+
+.container2{
+width: 600px;
+height: 400px;
+background-color: beige;
+border: 3px solid rgb(0, 0, 0);
+margin-top: 20px;
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWdt8BDFDTbb9JLO2xEfEx9I-sKvrsL7qZKw&s);
+background-position: center center;
+/* background-repeat: no-repeat; */
+
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="japan_street_wallpaper_hd_japanese-1920x1080.jpg" alt="image">
+    </div>
+
+    <div class="container2">
+
+    </div>
+</body>
+</html>

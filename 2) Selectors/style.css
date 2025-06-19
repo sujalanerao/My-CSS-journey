@@ -1,0 +1,34 @@
+.aqua{
+    background-color: aqua;
+}
+#lightgreen{
+    background-color: lightgreen;
+}
+.mixd{
+    background-color: lightcoral;
+}
+.mixd > p {
+    background-color: lightslategray;
+}
+div{
+    background-color: rgb(252, 252, 155);
+}
+div p {
+    background-color: rgb(203, 147, 255);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a:visited{
+    color: red;
+}
+a:link{
+    color: rgb(21, 181, 0);
+}
+a:active{
+    background-color: rgb(51, 251, 237);
+}
+a:hover{
+    color: black;
+}
